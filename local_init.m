@@ -7,6 +7,7 @@ git = 4;
 N = length(f)-git;
 for iDir=1:N
     if f(iDir+git).isdir
-       addpath(f(iDir+git).name)
+       addpath([LibFolder,'/',f(iDir+git).name])
     end
 end
+my_init;
